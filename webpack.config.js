@@ -6,8 +6,8 @@ module.exports = {
   },
   mode: "development",
   output: {
-    filename: "[name].js",
     path: path.resolve(__dirname, "dist"),
+    filename: "[name].js",
   },
   module: {
     rules: [
@@ -19,8 +19,6 @@ module.exports = {
             loader: "css-loader",
             options: {
               modules: {
-                sourceMap: true,
-                miniMize: false,
                 localIdentName: "[name]__[local]__[hash:base64:5]", // Customize the class name format
               },
             },
