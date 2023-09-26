@@ -1,2 +1,2 @@
 export * from "./components/testReturn";
-export * from "./components/testComponent";
+export { TestComponentProps, TestComponent } from "./components/testComponent";
