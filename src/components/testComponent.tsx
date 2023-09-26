@@ -1,3 +1,5 @@
+import styles from "./testComponent.module.css";
+
 export interface TestComponentProps
   extends React.HTMLAttributes<HTMLDivElement> {
   icon?: string;
@@ -5,7 +7,7 @@ export interface TestComponentProps
 
 export const TestComponent = ({ children, icon }: TestComponentProps) => {
   return (
-    <div>
+    <div className={styles.wrapper}>
       <h1>{children}</h1>
       <p>{icon}</p>
     </div>
