@@ -1,0 +1,20 @@
+{
+  "name": "@eightmedia/testmodule",
+  "version": "1.0.0",
+  "main": "dist/index.js",
+  "author": "Matthijs Brouwer <matthijs@eight.nl>",
+  "license": "MIT",
+  "scripts": {
+    "build": "rimraf dist && tsc"
+  },
+  "dependencies": {
+    "@types/react": "^18.2.22",
+    "@types/react-dom": "^18.2.7",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "rimraf": "^5.0.4",
+    "ts-loader": "^9.4.4",
+    "typescript": "^5.2.2",
+    "webpack-cli": "^5.1.4"
+  }
+}
