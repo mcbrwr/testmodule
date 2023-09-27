@@ -1,4 +1,3 @@
-// Contents of the file /rollup.config.js
 import typescript from "rollup-plugin-typescript2";
 import postcss from "rollup-plugin-postcss";
 import pkg from "./package.json";
@@ -6,7 +5,8 @@ const config = [
   {
     input: "src/index.ts",
     output: {
-      inlineDynamicImports: true,
+      preserveModules: true,
+      preserveModulesRoot: "src",
       dir: "./dist",
       format: "es",
     },
