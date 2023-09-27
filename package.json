@@ -3,9 +3,10 @@
   "version": "1.0.0",
   "author": "Matthijs Brouwer <matthijs@eight.nl>",
   "license": "MIT",
+  "type": "module",
   "scripts": {
     "prebuild": "rimraf dist",
-    "build": "webpack"
+    "build": "rollup -c --bundleConfigAsCjs"
   },
   "main": "dist/index.js",
   "files": [
@@ -16,16 +17,18 @@
     "react-dom": "^18.2.0"
   },
   "devDependencies": {
+    "@types/css-modules": "^1.0.3",
     "@types/react": "^18.2.22",
     "@types/react-dom": "^18.2.7",
-    "@types/css-modules": "^1.0.3",
+    "css-loader": "^6.8.1",
+    "rimraf": "^5.0.4",
+    "rollup": "^3.29.3",
+    "rollup-plugin-dts": "^6.0.2",
+    "rollup-plugin-postcss": "^4.0.2",
+    "rollup-plugin-typescript2": "^0.35.0",
+    "style-loader": "^3.3.3",
     "ts-loader": "^9.4.4",
     "typescript": "^5.2.2",
-    "webpack-cli": "^5.1.4",
-    "rimraf": "^5.0.4",
-    "css-loader": "^6.8.1",
-    "style-loader": "^3.3.3",
-    "typescript-plugin-css-modules": "^5.0.1",
-    "webpack": "^5.88.2"
+    "typescript-plugin-css-modules": "^5.0.1"
   }
 }
