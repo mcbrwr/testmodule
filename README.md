@@ -42,4 +42,5 @@ export default function Home() {
 }
 ```
 
-That should work. But it doesn't.
+That should work. But it doesn't. ☠️
+Error that appears is that the imported component is not a function.
