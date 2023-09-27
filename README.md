@@ -8,7 +8,7 @@ Currently having some issues: https://stackoverflow.com/questions/77179232/how-t
 
 To test:
 
-Clone this project
+Clone this project and [link the package](https://classic.yarnpkg.com/lang/en/docs/cli/link/)
 
 ```
 git clone https://github.com/mcbrwr/testmodule.git
@@ -18,7 +18,7 @@ yarn build
 yarn link
 ```
 
-go back to the parent folder and create a NextJS test project
+go back to the parent folder, create a fresh NextJS test project and link the above module package:
 
 ```
 cd ..
